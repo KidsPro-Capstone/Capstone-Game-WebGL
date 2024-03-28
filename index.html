@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Vitural-Tour</title>
+    <title>CapstoneGame</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -23,17 +23,17 @@
     </div>
     <div id="unity-fullscreen-button" style="display: none;"></div>
     <script>
-      const hideFullScreenButton = "1";
+      const hideFullScreenButton = "";
       const buildUrl = "Build";
-      const loaderUrl = buildUrl + "/Vitural-Tour-WebGL.loader.js";
+      const loaderUrl = buildUrl + "/Capstone-Game-WebGL.loader.js";
       const config = {
-        dataUrl: buildUrl + "/Vitural-Tour-WebGL.data.unityweb",
-        frameworkUrl: buildUrl + "/Vitural-Tour-WebGL.framework.js.unityweb",
-        codeUrl: buildUrl + "/Vitural-Tour-WebGL.wasm.unityweb",
+        dataUrl: buildUrl + "/Capstone-Game-WebGL.data.unityweb",
+        frameworkUrl: buildUrl + "/Capstone-Game-WebGL.framework.js.unityweb",
+        codeUrl: buildUrl + "/Capstone-Game-WebGL.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DenkStudio",
-        productName: "Vitural-Tour",
-        productVersion: "0.1",
+        companyName: "DefaultCompany",
+        productName: "CapstoneGame",
+        productVersion: "1.0",
       };
 
       const container = document.querySelector("#unity-container");
@@ -61,7 +61,7 @@
 
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         container.className = "unity-mobile";
-        config.devicePixelRatio = Math.min(config.devicePixelRatio, 2); 
+        config.devicePixelRatio = Math.min(config.devicePixelRatio, 2);
       }
       loadingCover.style.display = "";
 
@@ -90,4 +90,3 @@
     </script>
   </body>
 </html>
-  
